@@ -17,9 +17,12 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
+        <config-file target="config.xml" parent="/*/">
+            <pods-config ios-min-version="9.0" uses-frameworks="true"/>
+            <pod id="Bugsnag" version="5.6.2" />
+        </config-file>
+
         <source-file src="src/ios/BugsnagBridge.m" />
         <header-file src="src/ios/BugsnagBridge.h" />
-        <pods-config ios-min-version="9.0" uses-frameworks="true"/>
-        <pod id="Bugsnag" version="5.6.2" />
     </platform>
 </plugin>
