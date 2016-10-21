@@ -7,7 +7,7 @@
     <license>Apache 2.0</license>
     <dependency id="cordova-plugin-cocoapod-support"/>
 
-    <js-module name="BugsnagBridge" src="www/bugsnag_native.js">
+    <js-module name="BugsnagBridge" src="www/bugsnag_bridge.js">
         <clobbers target="cordova.plugins.Bugsnag" />
     </js-module>
     <platform name="ios">
