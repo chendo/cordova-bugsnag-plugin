@@ -40,6 +40,10 @@ var BugsnagBridge = (function () {
     exec(defaultSuccess, defaultError, 'BugsnagBridge', 'testReporting', []);
   }
 
+  bridge.forceCrash = function() {
+    exec(defaultSuccess, defaultError, 'BugsnagBridge', 'forceCrash', []);
+  }
+
   return bridge;
 })()
 

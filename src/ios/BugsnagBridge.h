@@ -28,5 +28,6 @@
 // - (void)clearTabWithName:(CDVInvokedUrlCommand*)command;
 
 - (void)testReporting:(CDVInvokedUrlCommand*)command;
+- (void)forceCrash:(CDVInvokedUrlCommand*)command;
 
 @end

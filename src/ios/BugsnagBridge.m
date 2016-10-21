@@ -65,4 +65,11 @@
     }];
 }
 
+- (void)forceCrash:(CDVInvokedUrlCommand*)command {
+    [self handleCommand:command block:^NSString *(NSArray *args) {
+        [NSObject unrecognisedSelector];
+        return nil;
+    }];
+}
+
 @end
