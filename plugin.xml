@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-bugsnag" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Bugsnag</name>
+    <description>
+        Adds Bugsnag framework and relevant bridging functions to iOS only (for now).
+    </description>
+    <license>Apache 2.0</license>
+    <dependency id="cordova-plugin-cocoapod-support"/>
+
+    <js-module name="BugsnagBridge" src="www/bugsnag_native.js">
+        <clobbers target="cordova.plugins.Bugsnag" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*/plugins">
+            <feature name="BugsnagBridge">
+                <param name="ios-package" value="BugsnagBridge" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/BugsnagBridge.m" />
+        <header-file src="src/ios/BugsnagBridge.h" />
+        <pods-config ios-min-version="9.0" uses-frameworks="true"/>
+        <pod id="Bugsnag" version="5.6.2" />
+    </platform>
+</plugin>
