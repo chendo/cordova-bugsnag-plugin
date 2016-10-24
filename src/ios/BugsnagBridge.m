@@ -67,7 +67,7 @@
 
 - (void)forceCrash:(CDVInvokedUrlCommand*)command {
     [self handleCommand:command block:^NSString *(NSArray *args) {
-        @throw NSInternalInconsistencyException;
+        assert(false);
         return nil;
     }];
 }
