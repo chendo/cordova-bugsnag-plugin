@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-bugsnag",
+  "version": "1.0.0",
+  "description": "\n        Adds Bugsnag framework and relevant bridging functions to iOS only (for now).\n    ",
+  "cordova": {
+    "id": "cordova-plugin-bugsnag",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chendo/cordova-plugin-bugsnag.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "chendo",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/chendo/cordova-plugin-bugsnag/issues"
+  },
+  "homepage": "https://github.com/chendo/cordova-plugin-bugsnag#readme"
+}
